@@ -14,17 +14,17 @@ div::-webkit-scrollbar {
 
 div#subtitle {
     position: absolute;
-    bottom: 75vh;
+    bottom: calc(100vh%20+%201.3em); /*75vh;*/
     left: 0px;
-    background: transparent;
+    background: black;
     font-family: "San Francisco",
         "Helvetica Neue", "Helvetica",
         Arial, Sans-Serif;
     font-size: calc( 3vh + 3vw );
-    font-weight: 200;
+    font-weight: 600;
     line-height: calc( 4vh + 3vw );
     color: #fefef2;
-    text-shadow: 3px 1px 4px #222;
+    text-shadow: none; /*3px 1px 4px #222;*/
     display: flex;
     flex-direction: column;
     flex-flow: column wrap;
@@ -34,6 +34,8 @@ div#subtitle {
     text-align: left;
     width: auto;
     height: auto;
+    text-transform: uppercase;
+    padding: 10px;
 }
 
 div#hero {
